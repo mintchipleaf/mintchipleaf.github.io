@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>mint</title>
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/podcasts.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300' rel='stylesheet' type='text/css'>
+</head>
+<body class="bg-dark">
+	<div id="container">
+		<div id="shutter" class="text-light bg-dark">
+			<div id="mintsymbol"><a href="index.html"><img src="./images/mintlogo_small.png"></a></div>
+			<!--<div id="minttext"><a href="index.html">m nt</a></div>-->
+			<div id="navigation">
+			<nav>
+			  <ul id="navlinks">
+			  	<li><a href="./about.html" class="working" onclick="active(this)">About</a></li>
+				<li><a href="./games.html" class="working" onclick="active(this)">Games</a></li>
+				<li><a href="./blog.html" class="inactive" onclick="active(this)">Blog</a></li>
+				<li><a href="resume.pdf" class="inactive" onclick="active(this)">Resume</a></li>
+  				</ul>
+			</nav>
+			</div>
+		</div>
+		<div id="content" class="bg-light">
+			<span id="page-name" class="font50px text-dark bg-medium shadow-dark pixelade">Podcasts</span>
+			<span id="link-panel" style="margin-left: 545px" class="font50px text-dark bg-medium shadow-dark-left pixelade">
+				<a href="mailto:mint@mintchipleaf.com" title="mint@mintchipleaf.com"><span class='symbol'>email</span></a>
+				<a href="http://www.github.com/mintleaf" title="github.com/mintleaf"><span class='symbol'>githubalt</span></a>
+				<a href="http://www.twitter.com/mintchipleaf" title ="@mintchipleaf"><span class='symbol'>twitterbird</span></a>
+			</span>
+			<div class="content text-dark contains-links">
+				<ul>
+					<li class="list-title">Games</li>
+						<ul>
+							<li class="list-item"><a href="https://www.idlethumbs.net/tonecontrol">Tone Control</a></li>
+							<li class="list-item"><a href="http://indiemegabooth.com/">Indie Megacast</a></li>
+							<li class="list-item"><a href="http://www.critical-distance.com/tag/podcast/">Critical Distance</a></li>
+							<li class="list-item"><a href="http://girlfriendmode.com/">Girlfriend Mode</a></li>
+							<li class="list-item"><a href="http://www.infiniteammo.com/podcast">Infinite Ammo</a></li>
+						</ul>
+					<li class="list-title">Story</li>
+						<ul>
+							<li class="list-item"><a href="http://99percentinvisible.org/">99% Invisible</a></li>
+							<li class="list-item"><a href="http://thememorypalace.us/">The Memory Palace</a></li>
+							<li class="list-item"><a href="http://songexploder.net/">Song Exploder</a></li>
+						</ul>
+					<li class="list-title">Current Events</li>
+						<ul>
+							<li class="list-item"><a href="http://www.theverge.com/video/the-vergecast">The Vergecast</a></li>
+							<li class="list-item"><a href="http://www.tested.com/podcast/this-is-only-a-test/">This Is Only A Test</a></li>
+							<li class="list-item"><a href="http://www.throwingshade.com/">Throwing Shade</a></li>
+						</ul>
+					<li class="list-title">Movies/Books/Etc</li>
+						<ul>
+							<li class="list-item"><a href="http://www.maximumfun.org/shows/wham-bam-pow">Wham Bam Pow</a></li>
+							<li class="list-item"><a href="http://www.ladylikebookclub.com/">Ladylike Book Club</a></li>
+							<li class="list-item"><a href="http://www.tested.com/podcast/still-untitled-the-adam-savage-project/">Still Untitled: Adam Savage</a></li>
+						</ul>
+					<li class="list-title">Comedy</li>
+						<ul>
+							<li class="list-item"><a href="http://www.maximumfun.org/shows/judge-john-hodgman">Judge John Hodgeman</a></li>
+							<li class="list-item"><a href="http://ohnopodcast.com/">Oh No Ross And Carrie</a></li>
+						</ul>
+				</ul>
+			</div>
+		</div>
+		<!--<div id="footer" class="bg-medium pixelade">
+			Copyright mint 2014
+		</div>-->
+	</div>
+	<script src="scripts/jquery-2.1.0.min.js"></script>
+	<script src="scripts/obelisk.js"></script>
+	<script src="scripts/canvas.js"></script>
+	<script>
+	$(document).ready(function(){
+		function active(e) {
+		    $$('.active').each(function(i) {
+		        i.removeClassName('active');
+		        console.log("butt");
+		    });
+		    e.addClassName('active');
+		};
+		/*$("#navigation a").click(function() {
+
+			$("shutter").animate({ height: 100}, 600);
+			$("title").animate({ left: 100}, 600);
+		});*/
+	});
+	</script> 
+</body>
+</html>

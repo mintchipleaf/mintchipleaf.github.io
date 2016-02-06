@@ -1,0 +1,25 @@
+#content {
+	height: 700px;
+}
+#bio-pic {
+	float: left;
+}
+#bio-text {
+	float:right;
+	width: 60%;
+	line-height: 130%;   
+	text-align: justify;
+}
+#mattie_pic {
+	display: block;
+	width: 250px;
+	margin-bottom: 30px;
+}
+#mint_pic {
+	width: 250px;
+	display: block;
+}
+#bio-links {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
