@@ -30,16 +30,6 @@ canvas {
 	-o-user-select: none;
 	user-select: none;
 }
-#unityPlayer {
-	display: block;
-	margin: auto;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 100;
-	padding: 0;
-}
 @font-face {
 	font-family: 'pixelade';
 	src: url('../pixelade/pixelade-webfont.eot');
