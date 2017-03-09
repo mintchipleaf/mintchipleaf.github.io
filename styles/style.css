@@ -22,8 +22,8 @@
 @font-face {
 	font-family: 'sofiapro';
 	src: url('../sofiapro/SofiaProLight.otf');
-	src: url('../pixelade/SofiaProExtraLight.otf') format('opentype'),
-		 url('../pixelade/SofiaProUltraLight.otf') format('opentype');
+	src: url('../sofiapro/SofiaProExtraLight.otf') format('opentype'),
+		 url('../sofiapro/SofiaProUltraLight.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -50,7 +50,7 @@ a.symbol:before {
 
 body {
 	font-family:sofiapro, sans-serif;
-	font-weight: 100;
+	font-weight: bold;
 	font-size: 18px;
 }
 a {
@@ -79,9 +79,9 @@ nav a:hover {
 nav a .underline {
 
 }
-.pixelade {
+/*.pixelade {
 	font-family: pixelade, pixelade-webfont;
-}
+}*/
 .active {
 	/*color: #9999FF;*/
 	border-bottom: 5px solid #9999FF;
@@ -113,10 +113,10 @@ nav a .underline {
 	border-radius: 10px;
 }
 .font46px {
-	font-size: 46px;
+	font-size: 40px;
 }
 .font50px {
-	font-size: 50px;
+	font-size: 40px;
 }
 .shadow-dark {
 	box-shadow: 5px 5px #5c5987;
