@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body class="bg-dark">
+	<div id="container">
+		<div id="shutter" class="text-light bg-dark">
+      {% if page.layout == 'splash' %}
+        <div id="mintlogo"><img src="/assets/images/mintlogo.png"></div>
+        <div id="splashlinks" class="font50px">
+          {% include sociallinks.html %}
+        </div>
+      {% else %}
+        <div id="mintsymbol"><a href="/index.html"><img src="/assets/images/mintlogo_small.png"></a></div>
+      {% endif %}
+        
+      {% include navlinks.html %}
+		</div>
+    {{content}}
+	</div>
+
+  </body>
+
+</html>
