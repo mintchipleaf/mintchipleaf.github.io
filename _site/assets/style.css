@@ -214,10 +214,10 @@ nav a .underline {
 		#link-panel {
 			position: absolute;
 			width: auto;
-			top: -7px;
+			top: -12px;
 			right: 40px;
 			/*margin-right: 40px;*/
-			padding: 6px 10px;
+			padding: 11px 15px;
 		}
 		#link-panel a {
 			o-transition:.3s;
