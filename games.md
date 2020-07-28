@@ -1,5 +1,5 @@
 ---
 layout: games
-title: Games
+title: games
 permalink: /games/
 ---
