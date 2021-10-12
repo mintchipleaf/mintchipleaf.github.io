@@ -152,6 +152,7 @@ nav a .underline {
 	}
 		.item-title {
 			margin: 10px 20px;
+			line-height: 50px;
 		}
 #container {
 	position: absolute;
@@ -203,7 +204,7 @@ nav a .underline {
 	#content {
 		position: relative;
 		margin: 50px auto;
-		height: 900px;
+		height: auto;
 		width: 900px;
 	}
 		#page-name {
@@ -233,3 +234,9 @@ nav a .underline {
 	position: relative;
 	width: 100%;
 }
+
+.clearfix{
+	content: "";
+	display: table;
+	clear: both;
+	}

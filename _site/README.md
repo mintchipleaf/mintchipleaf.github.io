@@ -1,4 +1,0 @@
-mintchipleaf.com
-================
-
-Personal Website
