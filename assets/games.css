@@ -1,5 +1,5 @@
 #content {
-	height: 1500px;
+	height: 650px;
 }
 #item-list {
 	position: absolute;
@@ -15,7 +15,7 @@
 	transition:.3s;
 }
 #item-list a:hover {
-	background-color: #ff1f4c;
+	background-color: #ff5977;
 }
 	#column-left {
 		width: 300px;
@@ -27,3 +27,9 @@
 		float: right;
 		margin-right: 7%;
 	}
+#content2 {
+	position: relative;
+	margin: 650px auto;
+	height: 900px;
+	width: 900px;
+}

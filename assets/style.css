@@ -119,10 +119,10 @@ nav a .underline {
 	font-size: 40px;
 }
 .shadow-dark {
-	box-shadow: 5px 5px #5c5987;
+	box-shadow: 5px 6px #5c5987;
 }
 .shadow-dark-left {
-	box-shadow: -5px 5px #5c5987;
+	box-shadow: -5px 6px #5c5987;
 }
 .shadow-light {
 	box-shadow: 5px 5px #87CEA5;
@@ -134,7 +134,7 @@ nav a .underline {
 }
 .contains-links a:hover {
 	/*color: #5c5863;*/
-	color: #ff1f4c;
+	color: #ff5977;
 }
 .content {
 	margin:40px;
