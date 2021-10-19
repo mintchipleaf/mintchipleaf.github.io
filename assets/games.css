@@ -14,8 +14,15 @@
 	webkit-transition:.3s;
 	transition:.3s;
 }
+#item-list a:hover .item-name {
+	background-color: #9999FF;
+}
 #item-list a:hover {
-	background-color: #ff5977;
+	background-color: #9999FF;
+}
+#item-list a:hover img {
+	transition: .28s;
+	transform: scale(1.02);
 }
 	#column-left {
 		width: 300px;

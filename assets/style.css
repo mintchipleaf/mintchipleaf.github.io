@@ -134,7 +134,10 @@ nav a .underline {
 }
 .contains-links a:hover {
 	/*color: #5c5863;*/
-	color: #ff5977;
+	color: #9999FF;
+}
+.img-wrapper {
+	overflow: hidden;
 }
 .content {
 	margin:40px;
@@ -234,9 +237,3 @@ nav a .underline {
 	position: relative;
 	width: 100%;
 }
-
-.clearfix{
-	content: "";
-	display: table;
-	clear: both;
-	}
