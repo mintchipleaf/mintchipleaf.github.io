@@ -127,6 +127,9 @@ nav a .underline {
 .shadow-light {
 	box-shadow: 5px 5px #87CEA5;
 }
+.separator-left {
+	border-left: 2px solid #9999FF;
+}
 .contains-links a {
 	/*border-bottom: 1px solid #ff1f4c;
 	/*color: #ff1f4c;*/

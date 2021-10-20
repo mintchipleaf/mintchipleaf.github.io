@@ -1,55 +1,27 @@
 <div id="item-list" class="pixelade">
-	<div id="column-left"> 
-	    <div class="item"><a href="http://mint.itch.io/pshnggg">
-		<div class="img-wrapper">
-			<img class="item-pic shadow" src="/assets/images/pshnggg.png"></img>
+		{%- for post in site.categories.jams -%} 
+		{% assign odd = forloop.index | modulo: 2%}
+	
+		{% if odd == 1%}
+		<div id="column-left"> 
+		{% else %}
+		<div id="column-right"> 
+		{% endif %}
+	
+		    <div class="item"><a href="{{ post.url | relative_url }}">
+			<div class="img-wrapper">
+			    <img class="item-pic" src="{{ post.preview | relative_url }}"></img>
+			</div>
+	
+			{% if odd == 1 %}
+			    <div class="item-name text-dark shadow-dark">
+			{% else %}
+			    <div class="item-name text-dark shadow-dark-left">
+			{% endif %}
+	
+			    <span class="item-title {{ post.titleclass }}">{{ post.title }}</span>
+			</div>
+		    </a></div>
 		</div>
-		<div class="item-name text-dark font46px shadow-dark" style="font-size: 32px">
-		    <span class="item-title">PSHNGGG!</span>
-		</div>
-	    </a></div>
-	    <div class="item"><a href="https://spacetronaut.itch.io/areyouwithus">
-		<div class="img-wrapper">
-			<img class="item-pic shadow" src="/assets/images/aywu.png"></img>
-		</div>
-		<div class="item-name text-dark font46px shadow-dark" style="font-size: 32px">
-		    <span class="item-title">Are You With Us?</span>
-		</div>
-	    </a></div>
-	    <div class="item"><a href="http://mint.itch.io/selfie-assault">
-		<div class="img-wrapper">
-			<img class="item-pic shadow" src="/assets/images/selfie-assault.png"></img>
-		</div>
-		<div class="item-name text-dark font46px shadow-dark" style="font-size: 32px">
-		    <span class="item-title">Selfie Assault!</span>
-		</div>
-	    </a></div>
-    
-	</div>
-	<div id="column-right">
-	    <div class="item"><a href="https://dualhammers.itch.io/orison-of-mercury-">
-		<div class="img-wrapper">
-			<img class="item-pic shadow" src="/assets/images/oom.png"></img>
-		</div>
-		<div class="item-name text-dark shadow-dark-left" style="font-size: 30px;">
-		    <span class="item-title">Orison of Mercury</span>
-		</div>
-	    </a></div>
-	    <div class="item"><a href="https://jh.itch.io/monster-space-theater">
-		<div class="img-wrapper">
-			<img class="item-pic shadow" src="/assets/images/mst.png"></img>
-		</div>
-		<div class="item-name text-dark shadow-dark-left" style="font-size: 24px;">
-		    <span class="item-title">Monster Space Theater</span>
-		</div>
-	    </a></div>
-	    <div class="item"><a href="https://mint.itch.io/basejump">
-		<div class="img-wrapper">
-			<img class="item-pic shadow" src="/assets/images/basejump.png"></img>
-		</div>
-		<div class="item-name text-dark font46px shadow-dark-left" style="font-size: 32px;">
-		    <span class="item-title">base.jump</span>
-		</div>
-	    </a></div>
-	</div>
+	    {%- endfor -%}
     </div>

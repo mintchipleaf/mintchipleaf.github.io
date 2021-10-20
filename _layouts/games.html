@@ -6,41 +6,29 @@ layout: gamespage
 </head>
 
 <div id="item-list" class="pixelade">
-    <div id="column-left"> 
-        <div class="item"><a href="https://store.steampowered.com/app/1144030/Pesterquest/">
-            <div class="img-wrapper">
-                <img class="item-pic shadow" src="/assets/images/pesterquest.png"></img>
-            </div>
-            <div class="item-name text-dark shadow-dark" style="font-size: 32px;">
-                <span class="item-title">Pesterquest</span>
-            </div>
-        </a></div>
-        <div class="item"><a href="http://ladykillerinabind.com/">
-            <div class="img-wrapper">
-                <img class="item-pic shadow" src="/assets/images/lkiab.png"></img>
-            </div>
-            <div class="item-name text-dark shadow-dark" style="font-size: 28px;">
-                <span class="item-title">Ladykiller In A Bind</span>
-            </div>
-        </a></div>
-    </div>
-    <div id="column-right">
-        <div id="column-right">
-            <div class="item"><a href="https://store.steampowered.com/app/833040/Hiveswap_Friendsim/">
+
+    {%- for post in site.categories.games -%} 
+        {% assign odd = forloop.index | modulo: 2%}
+
+        {% if odd == 1%}
+        <div id="column-left"> 
+        {% else %}
+        <div id="column-right"> 
+        {% endif %}
+
+            <div class="item"><a href="{{ post.url | relative_url }}">
                 <div class="img-wrapper">
-                    <img class="item-pic shadow" src="/assets/images/friendsim.png"></img>
+                    <img class="item-pic" src="{{ post.preview | relative_url }}"></img>
                 </div>
-                <div class="item-name text-dark shadow-dark-left" style="font-size: 28px;">
-                    <span class="item-title">Hiveswap Friendsim</span>
-                </div>
-            </a></div>
-            <div class="item"><a href="http://2064.io/">
-                <div class="img-wrapper">
-                    <img class="item-pic shadow" src="/assets/images/rom.png"></img>
-                </div>
-                <div class="item-name text-dark shadow-dark-left" style="font-size: 26px;">
-                    <span class="item-title">Read Only Memories</span>
+
+                {% if odd == 1 %}
+                    <div class="item-name text-dark shadow-dark">
+                {% else %}
+                    <div class="item-name text-dark shadow-dark-left">
+                {% endif %}
+
+                    <span class="item-title {{ post.titleclass }}">{{ post.title }}</span>
                 </div>
             </a></div>
         </div>
-    </div>
+    {%- endfor -%}
