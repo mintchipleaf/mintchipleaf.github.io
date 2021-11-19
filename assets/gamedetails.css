@@ -1,6 +1,16 @@
 #content {
 	height: 370px;
 }
+#page-name:hover {
+	color: #b1f8d0;
+}
+#page-name:hover ~ #navarrow {
+	color: #9999FF;
+	opacity: 100%;
+}
+#navarrow {
+	size: 
+}
 #game-info {
 	margin: 40px 100px;
 	height: 200px;
@@ -15,6 +25,12 @@
 #game-info img {
 	height: 200px;
 	width: 300px;
+}
+#game-info a:hover {
+	color: #9999FF;
+}
+#game-pic-wrapper a:hover {
+	background-color: #9999FF;
 }
 #role {
 	margin-left: 340px;
