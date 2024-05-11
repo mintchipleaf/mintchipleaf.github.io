@@ -4,12 +4,8 @@
 #page-name:hover {
 	color: #b1f8d0;
 }
-#page-name:hover ~ #navarrow {
-	color: #9999FF;
-	opacity: 100%;
-}
-#navarrow {
-	size: 
+#navarrow:hover {
+	color: #b1f8d0; 
 }
 #game-info {
 	margin: 40px 100px;
@@ -39,6 +35,9 @@
 }
 .info-item {
 	padding: 10px;
+}
+.info-item a {
+	text-decoration: underline 2px;
 }
 #game-desc {
 	margin: 0px 100px;

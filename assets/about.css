@@ -15,16 +15,16 @@ td a {
 #bio-pic img {
 	display: block;
 	width: 250px;
-	margin-bottom: 30px	
+	margin-bottom: 30px
 }
 #bio-text {
 	float:right;
 	width: 60%;
-	line-height: 130%;   
+	line-height: 130%;
 	text-align: justify;
 }
 #bio-links {
-	font-weight: normal;
+	font-weight: 200;
 	font-size: 20px;
 }
 #bio-links table {

@@ -1,6 +1,7 @@
 ---
 layout: gamedetails
-title:  "Ladykiller"
+title:  "Ladykiller In A Bind"
+titleclass: textsize28
 date:   2017-03-09 11:51:30 -0800
 categories: games
 
