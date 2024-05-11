@@ -19,14 +19,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-	font-family: 'sofiapro';
-	src: url('/assets/sofiapro/SofiaProLight.otf');
-	src: url('/assets/sofiapro/SofiaProExtraLight.otf') format('opentype'),
-		 url('/assets/sofiapro/SofiaProUltraLight.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
-}
 
 .symbol, a.symbol:before {
     font-family: 'Mono Social Icons Font';
@@ -49,8 +41,8 @@ a.symbol:before {
 }
 
 body {
-	font-family:sofiapro, sans-serif;
-	font-weight: bold;
+	font-family:sofia-pro, sans-serif;
+	font-weight: 400;
 	font-size: 18px;
 }
 a {
@@ -79,11 +71,7 @@ nav a:hover {
 nav a .underline {
 
 }
-/*.pixelade {
-	font-family: pixelade, pixelade-webfont;
-}*/
 .active {
-	/*color: #9999FF;*/
 	border-bottom: 5px solid #9999FF;
 }
 .text-light {
@@ -98,12 +86,7 @@ nav a .underline {
 .bg-dark {
 	background-color: #5c5987;
 }
-.bg-black {
-	/*background-color: #5c5863;*/
-	background-color: black;
-}
 .bg-light {
-	/*background-color: #b1f8d0;*/
 	background-color: #9BE2B9;
 }
 .bg-medium {
@@ -129,6 +112,9 @@ nav a .underline {
 }
 .separator-left {
 	border-left: 2px solid #9999FF;
+}
+.separator-top {
+	border-top: 1px solid #5c5987;
 }
 .contains-links a {
 	/*border-bottom: 1px solid #ff1f4c;
