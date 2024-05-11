@@ -43,11 +43,17 @@
 .item-title {
 	font-size: 32px;
 }
-.textsize26 {
-	font-size: 26px;
+.textsize22 {
+	font-size: 22px;
 }
 .textsize24 {
 	font-size: 24px;
+}
+.textsize26 {
+	font-size: 26px;
+}
+.textsize28 {
+	font-size: 28px;
 }
 .textsize30 {
 	font-size: 30px;
