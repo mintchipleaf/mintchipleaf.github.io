@@ -6,12 +6,7 @@
 
     {%- for post in include.loc -%} 
         {% assign odd = forloop.index | modulo: 2%}
-
-        {% if odd == 1%}
-        <div class="column-left"> 
-        {% else %}
-        <div class="column-right"> 
-        {% endif %}
+        <div>
 
             <div class="item">
                 <a href="{{ post.url | relative_url }}">

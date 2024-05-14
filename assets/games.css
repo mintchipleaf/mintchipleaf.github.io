@@ -1,14 +1,14 @@
 #content {
-	height: 650px;
-}
-#content2 {
-	position: relative;
-	margin: auto;
-	height: 650px;
-	width: 900px;
+	height: fit-content;
+	padding-bottom: 20px;
 }
 #item-list {
-	position: absolute;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-basis: auto;
+
 	width: 90%;
 	height: 90%;
 	margin: 5%;
@@ -40,24 +40,20 @@
 	float: right;
 	margin-right: 7%;
 }
-.item
-{
-	position:relative;
-}
 .item:hover  .item-popout {
-	display: inline;
+	display: inline-block;
 	z-index: 10;
 }
 	.item-popout {
 		pointer-events: none;
-		position: absolute;
+		position: relative;
 		display: none;
 		height: 108%;
 		width: 150%;
-		top: 0;
+		top: -101%;
 	}
 	.popout-left {
-		right: 102%;
+		right: 152%;
 		text-align: right;
 	}
 	.popout-right {
