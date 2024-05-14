@@ -1,34 +1,17 @@
 ---
-layout: gamespage
+layout: default
 ---
 <head>
-    <link rel="stylesheet" href="{{ "/assets/games.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/games.css" | relative_url }}">
 </head>
 
-<div id="item-list" class="pixelade">
+<div id="content" class="bg-light">
+  <span id="page-name" class="font50px text-dark bg-medium shadow-dark pixelade">{{ page.title | escape }}</span>
+  <span id="link-panel" style="margin-left: 545px" class="font50px text-dark bg-medium shadow-dark-left pixelade">{% include sociallinks.html %}</span>
+  {%- include gameslist.html loc=site.categories.games-%}
+</div>
 
-    {%- for post in site.categories.games -%} 
-        {% assign odd = forloop.index | modulo: 2%}
-
-        {% if odd == 1%}
-        <div id="column-left"> 
-        {% else %}
-        <div id="column-right"> 
-        {% endif %}
-
-            <div class="item"><a href="{{ post.url | relative_url }}">
-                <div class="img-wrapper">
-                    <img class="item-pic" src="{{ post.preview | relative_url }}"></img>
-                </div>
-
-                {% if odd == 1 %}
-                    <div class="item-name text-dark shadow-dark">
-                {% else %}
-                    <div class="item-name text-dark shadow-dark-left">
-                {% endif %}
-
-                    <span class="item-title {{ post.titleclass }}">{{ post.title }}</span>
-                </div>
-            </a></div>
-        </div>
-    {%- endfor -%}
+<div id="content2" class="bg-light">
+  <span id="page-name" class="font50px text-dark bg-medium shadow-dark pixelade">{{ "jams" | escape }}</span>
+  {%- include gameslist.html loc=site.categories.jams-%}
+</div>

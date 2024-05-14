@@ -4,8 +4,16 @@
 #page-name:hover {
 	color: #b1f8d0;
 }
-#navarrow:hover {
-	color: #b1f8d0; 
+#page-name:hover + #navarrow{
+	opacity: 100%;
+}
+#navarrow {
+	position: absolute;
+	left: 20px;
+	top: -1px;
+	font-size: 42px;
+	color: #5c5987;
+	opacity: 0%;
 }
 #game-info {
 	margin: 40px 100px;
@@ -31,7 +39,7 @@
 #role {
 	margin-left: 340px;
 	margin-top: -40px;
-	font-weight: bold;
+	font-weight: 900;
 }
 .info-item {
 	padding: 10px;

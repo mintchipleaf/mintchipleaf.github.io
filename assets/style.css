@@ -113,6 +113,9 @@ nav a .underline {
 .separator-left {
 	border-left: 2px solid #9999FF;
 }
+.separator-right {
+	border-right: 2px solid #9999FF;
+}
 .separator-top {
 	border-top: 1px solid #5c5987;
 }
@@ -202,7 +205,7 @@ nav a .underline {
 		#page-name {
 			width: auto;
 			margin-left: 40px;
-			padding: 6px 10px;
+			padding: 0px 10px 6px;
 		}
 		#link-panel {
 			position: absolute;

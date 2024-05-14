@@ -1,6 +1,12 @@
 #content {
 	height: 650px;
 }
+#content2 {
+	position: relative;
+	margin: auto;
+	height: 650px;
+	width: 900px;
+}
 #item-list {
 	position: absolute;
 	width: 90%;
@@ -24,22 +30,40 @@
 	transition: .28s;
 	transform: scale(1.02);
 }
-	#column-left {
-		width: 300px;
-		float: left;
-		margin-left: 7%;		
-	}
-	#column-right {
-		width: 300px;
-		float: right;
-		margin-right: 7%;
-	}
-#content2 {
-	position: relative;
-	margin: 650px auto;
-	height: 900px;
-	width: 900px;
+.column-left {
+	width: 300px;
+	float: left;
+	margin-left: 7%;		
 }
+.column-right {
+	width: 300px;
+	float: right;
+	margin-right: 7%;
+}
+.item
+{
+	position:relative;
+}
+.item:hover  .item-popout {
+	display: inline;
+	z-index: 10;
+}
+	.item-popout {
+		pointer-events: none;
+		position: absolute;
+		display: none;
+		height: 108%;
+		width: 150%;
+		top: 0;
+	}
+	.popout-left {
+		right: 102%;
+		text-align: right;
+	}
+	.popout-right {
+		left: 102%;
+		text-align: left;
+	}
 .item-title {
 	font-size: 32px;
 }

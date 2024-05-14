@@ -1,0 +1,43 @@
+#game-content {
+	height: 100%;
+	width: 100%;
+	position: inherit;
+}
+#game-info {
+	font-size: 30px;
+	font-weight: normal;
+}
+#game-info table {
+	width: 90%;
+	margin: 0 5%;
+}
+#game-info a:hover {
+	color: #9999FF;
+}
+#role-left {
+	position: absolute;
+	width:fit-content;
+	height: fit-content;
+	margin: 5%;
+	padding: 1%;
+	font-weight: 900;
+	left: 0;
+}
+#role-right {
+	position: absolute;
+	width:fit-content;
+	height: fit-content;
+	margin: 5%;
+	padding: 1%;
+	font-weight: 900;
+	right: 0;
+}
+.info-item {
+	padding: 10px;
+}
+.info-item a {
+	text-decoration: underline 2px;
+}
+#game-desc {
+	margin: 0px 100px;
+}
