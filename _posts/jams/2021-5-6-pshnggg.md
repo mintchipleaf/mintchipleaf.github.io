@@ -11,6 +11,6 @@ fulltitle: "PSHNGGG!"
 releasedate: "2015"
 company: "Train Jam"
 companylink: https://trainjam.com/
-role: "Programmer & Designer</br> & Promoter"
+role: "Programmer, Designer</br> & Promoter"
 ---
 
