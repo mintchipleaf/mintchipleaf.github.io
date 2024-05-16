@@ -1,17 +1,15 @@
-#content {
-	height: fit-content;
-	padding-bottom: 20px;
-}
+
 #item-list {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	flex-basis: auto;
+	flex-shrink: 1;
 
 	width: 90%;
 	height: 90%;
-	margin: 5%;
+	margin: 40px 5% 5% 5%;
 }
 #item-list a {
 	o-transition:.3s;
@@ -31,14 +29,17 @@
 	transform: scale(1.02);
 }
 .column-left {
-	width: 300px;
+	width: auto;
 	float: left;
 	margin-left: 7%;		
 }
 .column-right {
-	width: 300px;
+	width: auto;
 	float: right;
 	margin-right: 7%;
+}
+.item.columns {
+	columns: 2;
 }
 .item:hover  .item-popout {
 	display: inline-block;

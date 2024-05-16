@@ -131,9 +131,6 @@ nav a .underline {
 .img-wrapper {
 	overflow: hidden;
 }
-.content {
-	margin:40px;
-}
 .item {
 	height: 250px;
 	width: 300px;
@@ -179,7 +176,7 @@ nav a .underline {
 
 		}
 		#navlinks {
-			position: absolute;
+			position: relative;
 			top: 125px;
 			left: 0;
 			right: 0;
@@ -198,22 +195,23 @@ nav a .underline {
 		}
 	#content {
 		position: relative;
-		margin: 50px auto;
+		margin: auto;
+		margin-top: 50px;
 		height: auto;
+		padding-bottom: 20px;
 		width: 900px;
 		max-width: 100%;
 	}
 		#page-name {
 			width: auto;
-			margin-left: 40px;
+			margin-left: 5%;
 			padding: 0px 10px 6px;
 		}
 		#link-panel {
 			position: absolute;
 			width: auto;
 			top: -7px;
-			right: 40px;
-			/*margin-right: 40px;*/
+			right: 5%;
 			padding: 6px 10px;
 		}
 		#link-panel a {

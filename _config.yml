@@ -19,14 +19,19 @@ description: > # this means to ignore newlines until "baseurl:"
   Portfolio site for 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mintchipleaf.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mintchipleaf
 github_username:  mintchipleaf
 
+repository: mintchipleaf/mintchipleaf.github.io
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 gems:
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
   - jekyll-feed
 exclude:
   - Gemfile
