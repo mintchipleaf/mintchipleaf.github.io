@@ -156,7 +156,7 @@ nav a .underline {
 }
 	#shutter {
 		position: relative;
-		width: 100%;
+		max-width: 100%;
 		text-align: center;
 		height: 120px;
 	}
@@ -201,6 +201,7 @@ nav a .underline {
 		margin: 50px auto;
 		height: auto;
 		width: 900px;
+		max-width: 100%;
 	}
 		#page-name {
 			width: auto;
