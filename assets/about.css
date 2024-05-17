@@ -9,46 +9,48 @@ td a {
 #bio-container {
 	height: 100%;
 	max-width: 100%;
-/* 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap-reverse;
-	justify-content: space-around;
-	flex-basis: auto;
-	flex-shrink: 1; */
-
 	margin: 40px 5% 5% 5%;
 }
-#bio-pic {
+#bio-pics {
 	float: left;
 	width: 250px;
-	height: 250px;
+	height: auto;
 	max-width: 30%;
+	padding-right: 10%;
+	padding-bottom: 2.5%
 }
-#bio-pic img {
-	display: block;
+#bio-pics img {
 	width: auto;
 	height: auto;
 	max-width: 100%;
 	max-height: 100%;
 	aspect-ratio: 1/1;
-	margin-bottom: 30px
+	margin-bottom: 12.5%;
 }
 #bio-text {
-	display:inline-block;
-	margin-left: 10%;
-	/* float:right; */
-	width: 486px;
-	max-width: 60%;
-	min-width: 60%;
 	line-height: 130%;
 	text-align: justify;
+	word-wrap: balance;
 }
 #bio-links {
-	width: 100%;
+	margin-bottom: 25px;
 	font-weight: 200;
 	font-size: 20px;
 }
 #bio-links table {
 	margin-left: 12px;
+}
+#bio-links-wide {
+	max-width: 60%;
+	margin-left: 40%;
+}
+#bio-links-compact {
+	display: none;
+}
+
+@media (max-width: 550px) {
+	#bio-links-wide { display: none; }
+}
+@media (max-width: 550px) {
+	#bio-links-compact { display: inherit; }
 }
