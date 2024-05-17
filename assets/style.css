@@ -95,10 +95,7 @@ nav a .underline {
 .rounded {
 	border-radius: 10px;
 }
-.font46px {
-	font-size: 40px;
-}
-.font50px {
+.font40px {
 	font-size: 40px;
 }
 .shadow-dark {
@@ -203,9 +200,12 @@ nav a .underline {
 		max-width: 100%;
 	}
 		#page-name {
+			position: relative;
 			width: auto;
+			top: -2px;
 			margin-left: 5%;
-			padding: 0px 10px 6px;
+			padding: 0px 10px 4px;
+			font-size: clamp(24px, 5vw, 40px);
 		}
 		#link-panel {
 			position: absolute;
@@ -213,6 +213,7 @@ nav a .underline {
 			top: -7px;
 			right: 5%;
 			padding: 6px 10px;
+			font-size: clamp(24px, 5vw, 40px);
 		}
 		#link-panel a {
 			o-transition:.3s;

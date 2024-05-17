@@ -8,13 +8,13 @@
 		<div id="shutter" class="text-light bg-dark">
       {% if page.layout == 'splash' %}
         <div id="mintlogo"><img src="/assets/images/mintlogo.png"></div>
-        <div id="splashlinks" class="font50px">
-          {% include sociallinks.html %}
+        <div id="splashlinks" class="font40px">
+          {% include links/social_links.html %}
         </div>
       {% else %}
         <div id="mintsymbol"><a href="{{ "/" | relative_url }}"><img src="/assets/images/mintlogo_small.png"></a></div>
       {% endif %}
-      {% include navlinks.html %}
+      {% include links/nav_links.html %}
 		</div>
     {{content}}
 	</div>
