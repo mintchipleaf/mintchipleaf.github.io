@@ -20,30 +20,31 @@ layout: default
         <img class="game-pic shadow" src="{{ page.preview | relative_url }}"></img>
       </a>
     </div>
-    <table class="separator-left">
-      <tr>
-        <div>
-          <td class="info-item"><a href="{{ page.link }}">{{ page.fulltitle }}</a></td>
-        </div>
-      </tr>
-      <tr>
-        <div>
-          <td class="info-item">{{ page.releasedate }}</td>
-        </div>
-      </tr>
-      <tr>
-        <div>
-          <td class="info-item">{{ page.company }}</td>
-        </div>
-      </tr>
-    </table>
+    <div id="game-header">
+      <table class="separator-left">
+        <tr>
+          <div>
+            <td class="info-item"><a href="{{ page.link }}">{{ page.fulltitle }}</a></td>
+          </div>
+        </tr>
+        <tr>
+          <div>
+            <td class="info-item">{{ page.releasedate }}</td>
+          </div>
+        </tr>
+        <tr>
+          <div>
+            <td class="info-item">{{ page.company }}</td>
+          </div>
+        </tr>
+      </table>
 
-    <div id="role">
-      <td class="info-item">{{ page.role }}</td>
+      <div id="role">
+        <td class="info-item">{{ page.role }}</td>
+      </div>
     </div>
-  </div>
 
-  <div id="game-desc">
+  <div id="game-desc" class="separator-top">
     {{ content }}
   </div>
 </div>

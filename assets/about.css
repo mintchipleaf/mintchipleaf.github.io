@@ -30,7 +30,7 @@ td a {
 #bio-text {
 	line-height: 130%;
 	text-align: justify;
-	word-wrap: balance;
+	text-wrap: balance;
 }
 #bio-links {
 	margin-bottom: 25px;

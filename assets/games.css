@@ -38,12 +38,11 @@
 	float: right;
 	margin-right: 7%;
 }
-.item.columns {
-	columns: 2;
-}
-.item:hover  .item-popout {
-	display: inline-block;
-	z-index: 10;
+@media (min-width: 700px) {
+	.item:hover  .item-popout {
+		display: inline-block;
+		z-index: 10;
+	}
 }
 	.item-popout {
 		pointer-events: none;

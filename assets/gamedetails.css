@@ -1,5 +1,4 @@
 #content {
-	height: 370px;
 }
 #page-name:hover {
 	color: #b1f8d0;
@@ -16,15 +15,14 @@
 	opacity: 0%;
 }
 #game-info {
-	margin: 40px 100px;
-	height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin: 40px 5% 0 5%;
 	font-size: 30px;
 	font-weight: normal;
-}
-#game-info table {
-	position: absolute;
-	margin-left: 340px;
-	margin-top: -205px;
 }
 #game-info img {
 	height: 200px;
@@ -33,12 +31,20 @@
 #game-info a:hover {
 	color: #9999FF;
 }
+#game-header {
+	margin-left: 5%;
+	width: 355px;
+	max-width: 100%;
+}
+#game-pic-wrapper {
+	flex: 0;
+	margin-bottom: 10px;
+}
 #game-pic-wrapper a:hover {
 	background-color: #9999FF;
 }
 #role {
-	margin-left: 340px;
-	margin-top: -40px;
+	margin-top: 10px;
 	font-weight: 900;
 }
 .info-item {
@@ -48,5 +54,9 @@
 	text-decoration: underline 2px;
 }
 #game-desc {
-	margin: 0px 100px;
+	min-width: 50%;
+	padding-top: 10px;
+	margin: 25px;
+	min-width: 85%;
+	text-wrap: balance;
 }
