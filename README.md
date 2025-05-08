@@ -1,4 +1,3 @@
-mintchipleaf.com
-================
+# 🌱mintchipleaf.com
 
-Personal Website
+Personal Portfolio Website
