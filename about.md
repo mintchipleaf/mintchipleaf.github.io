@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-I'm mint and I'm a game developer & designer. I want to make beautiful ideas real, and I value playfulness above all else.
+I'm mint and I'm a game developer & designer.<br/> I want to make beautiful ideas real, and I value playfulness above all else.
 <br/>
 <br/>
 This site is a portfolio of the works I’ve contributed to and created, and is always being updated with new items. "mint" is the pseudonym I go by and what I publish my works under. <!--The bottom portrait is one of the icons that usually accompany the name.-->
