@@ -10,6 +10,6 @@ preview: /assets/images/friendsim.png
 fulltitle: "Hiveswap Friendsim"
 releasedate: "2018"
 company: "What Pumpkin Games"
-role: "Tools Programmer</br>& Technical Designer"
+role: "Programmer & Designer"
 ---
 
