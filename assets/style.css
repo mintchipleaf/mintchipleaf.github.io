@@ -19,6 +19,30 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'eurofurence35';
+    src: url('../assets/fonts/eurofc35.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurofurence55';
+    src: url('../assets/fonts/eurofc55.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurofurence75';
+    src: url('../assets/fonts/eurofc75.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'unifur';
+    src: url('../assets/fonts/unifur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .symbol, a.symbol:before {
     font-family: 'Mono Social Icons Font';
@@ -50,11 +74,12 @@ a {
 	color: inherit;
 }
 nav ul li {
-	font-size: 25px;
+	font-family: 'eurofurence35';
+	font-size: 32px;
 	display: inline;
 	margin-right: 10px;
 	margin-left: 10px;
-	font-weight: 200;
+	font-weight: 500;
 }
 nav a {
 	o-transition:.3s;
@@ -129,6 +154,7 @@ nav a .underline {
 	overflow: hidden;
 }
 .item {
+	font-family: eurofurence75;
 	height: 250px;
 	width: 300px;
 	margin-bottom: 20px;
@@ -200,19 +226,20 @@ nav a .underline {
 		max-width: 100%;
 	}
 		#page-name {
+			font-family: eurofurence55;
 			position: relative;
 			width: auto;
 			top: -2px;
 			margin-left: 5%;
-			padding: 0px 10px 4px;
-			font-size: clamp(24px, 5vw, 40px);
+			padding: 4px 10px 4px;
+			font-size: clamp(30px, 5vw, 50px);
 		}
 		#link-panel {
 			position: absolute;
 			width: auto;
-			top: -7px;
+			top: -6px;
 			right: 5%;
-			padding: 6px 10px;
+			padding: 7px 10px;
 			font-size: clamp(24px, 5vw, 40px);
 		}
 		#link-panel a {
