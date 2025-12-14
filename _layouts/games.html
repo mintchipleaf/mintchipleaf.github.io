@@ -5,13 +5,15 @@ layout: default
   <link rel="stylesheet" href="{{ "/assets/games.css" | relative_url }}">
 </head>
 
-<div id="content" class="bg-light">
+<div class="content bg-light">
   <span id="page-name" class="font40px text-dark bg-medium shadow-dark pixelade">{{ page.title | escape }}</span>
   <span id="link-panel" class="font40px text-dark bg-medium shadow-dark-left pixelade">{% include links/social_links.html %}</span>
   {%- include gameslist.html loc=site.categories.games-%}
 </div>
 
-<div id="content" class="bg-light">
-  <span id="page-name" class="font40px text-dark bg-medium shadow-dark pixelade">{{ "jams" | escape }}</span>
+<div class="content second-content bg-light">
+  <div>
+      <span id="page-name" class="font40px text-dark bg-medium shadow-dark pixelade">{{ "jams" | escape }}</span>
+  </div>
   {%- include gameslist.html loc=site.categories.jams-%}
 </div>

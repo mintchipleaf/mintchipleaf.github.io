@@ -3,28 +3,47 @@
 }
 #shutter {
 	height: 100%;
+	text-align: center;
+	padding-top: 2%;
+	/* margin-top: 5%; */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #mintsymbol {
-	position: absolute;
+	/* position: absolute;
 	top: 150px;
 	left: 0;
-	right: 0;
+	right: 0; */
 }
 #mintlogo {
-	position: absolute;
+	/* padding-top: 5%; */
+	padding-bottom: 1%;
+	width: 100%;
+	max-height: 600px;
+	aspect-ratio: 1;
+
+	/* position: absolute;
 	top: 60px;
 	left: 0;
-	right: 0;
+	right: 0; */
+
+}
+#mintlogo svg {
+	width: 100%;
+	height: 100%;
 }
 #minttext {
 	top: 218px;
 	/*margin-right: 16px;*/
 }
 #splashlinks {
-	position: absolute;
+	font-size: 72px;
+	/* position: absolute;
 	top: 280px;
 	left: 0;
-	right: 0;
+	right: 0; */
 }
 #splashlinks a {
 	o-transition:.3s;
@@ -36,6 +55,19 @@
 #splashlinks a:hover {
 	color: #9999FF;
 }
+#navigation {
+	margin: 0;
+}
 #navlinks {
-	top: 350px;
+	font-family: 'eurofurence35';
+	text-decoration: underline;
+	text-decoration-thickness: .03em;
+	text-underline-offset: 6px;
+	font-weight: 100;
+	font-size: 68px;
+}
+
+nav a:hover {
+	text-decoration-thickness: .03em;
+	text-underline-offset: 6px;	
 }

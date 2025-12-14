@@ -73,12 +73,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-nav ul li {
-	font-family: 'eurofurence35';
+nav {
+	font-family: 'eurofurence55';
 	font-size: 32px;
 	display: inline;
-	margin-right: 10px;
-	margin-left: 10px;
 	font-weight: 500;
 }
 nav a {
@@ -87,10 +85,13 @@ nav a {
 	moz-transition:.3s;
 	webkit-transition:.3s;
 	transition:.3s;
-	border-bottom: 0px solid #5c5987;
+	/* border-bottom: 0px solid #5c5987; */
 }
 nav a:hover {
-	border-bottom: 5px solid #9999FF;
+	/* border-bottom: 5px solid #9999FF; */
+	text-decoration: underline;
+	text-decoration-thickness: .05em;
+	text-underline-offset: 3px;
 	color: #9999FF;
 }
 nav a .underline {
@@ -166,27 +167,48 @@ nav a .underline {
 		height:50px;
 	}
 		.item-title {
-			margin: 10px 20px 10px 10px;
+			margin: 10px 0 10px 10px;
 			line-height: 50px;
 		}
+.page-content {
+	height: 100%;
+}
+#wrapper {
+	display: flex;
+	flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+}
 #container {
 	position: absolute;
 	width: 100%;
 	height: auto;
+	display: flex;
+  justify-content: space-around;
+  
 }
 	#shutter {
 		position: relative;
 		max-width: 100%;
 		text-align: center;
-		height: 120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		text-align: center;
+		margin-top: 0.5%;
+		margin-bottom: 0.5%;
 	}
 		#mintsymbol {
-			margin-right: 80px;
+			height: 120px;
+			width: 120px;
+			margin-right: auto;
+			margin-left: auto;
 		}
-		#mintsymbol img {
-			position: absolute;
-			top: 10px;
-			height:100px;
+		#mintsymbol svg {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 1;
 		}
 		#minttext {
 			position: absolute;
@@ -198,11 +220,16 @@ nav a .underline {
 			font-weight: 200;
 
 		}
+		#navigation {
+			margin-top: 4px;
+		}
 		#navlinks {
-			position: relative;
-			top: 125px;
-			left: 0;
-			right: 0;
+			/* font-size: 34px; */
+			display: flex;
+			justify-content: center;
+		}
+		.nav-link {
+			padding: 0 20px 0 20px;
 		}
 		#externallinks {
 			position:absolute;
@@ -212,27 +239,26 @@ nav a .underline {
 		}
 		#externallinks a {
 			font-size: 50px;
-		}
+		}a
 		#externallinks a:hover {
 			border:none;
 		}
-	#content {
+	.content {
 		position: relative;
-		margin: auto;
-		margin-top: 50px;
+		margin: 10px auto 40px auto;
 		height: auto;
 		padding-bottom: 20px;
-		width: 900px;
-		max-width: 100%;
+		max-width: 900px;
+		width: 100%;
 	}
 		#page-name {
-			font-family: eurofurence55;
+			font-family: 'eurofurence55';
 			position: relative;
 			width: auto;
-			top: -2px;
+			top: -5px;
 			margin-left: 5%;
-			padding: 4px 10px 4px;
-			font-size: clamp(30px, 5vw, 50px);
+			padding: 1px 10px 7px;
+			font-size: clamp(42px, 5vw, 50px);
 		}
 		#link-panel {
 			position: absolute;
@@ -240,7 +266,7 @@ nav a .underline {
 			top: -6px;
 			right: 5%;
 			padding: 7px 10px;
-			font-size: clamp(24px, 5vw, 40px);
+			font-size: clamp(35px, 5vw, 40px);
 		}
 		#link-panel a {
 			o-transition:.3s;

@@ -8,7 +8,7 @@ td a {
 }
 #bio-container {
 	height: 100%;
-	max-width: 100%;
+	max-width: 90%;
 	margin: 40px 5% 5% 5%;
 }
 #bio-pics {
@@ -32,10 +32,9 @@ td a {
 	text-wrap: balance;
 }
 #bio-links {
-	font-family: eurofurence55;
+	font-family: 'eurofurence55';
 	margin-bottom: 25px;
-	font-weight: 200;
-	font-size: 24px;
+	font-size: 26px;
 }
 #bio-links table {
 	margin-left: 12px;

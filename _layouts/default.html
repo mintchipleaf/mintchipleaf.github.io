@@ -4,20 +4,22 @@
 {% include head.html %}
 
 <body class="bg-dark">
-	<div id="container">
+  <div class="page-content">
+	<div id="wrapper">
 		<div id="shutter" class="text-light bg-dark">
       {% if page.layout == 'splash' %}
-        <div id="mintlogo"><img src="/assets/images/mintlogo.png"></div>
+        <div id="mintlogo"> {%- include mintlogo_eufur.svg -%} </div>
         <div id="splashlinks" class="font40px">
           {% include links/social_links.html %}
         </div>
       {% else %}
-        <div id="mintsymbol"><a href="{{ "/" | relative_url }}"><img src="/assets/images/mintlogo_small.png"></a></div>
+        <div id="mintsymbol"><a href="{{ "/" | relative_url }}"> {%- include mintlogo_eufur.svg -%} </a></div>
       {% endif %}
       {% include links/nav_links.html %}
 		</div>
     {{content}}
 	</div>
+  </div>
 
   </body>
 

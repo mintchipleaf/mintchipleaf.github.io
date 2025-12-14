@@ -2,8 +2,12 @@
 	height: 100%;
 	width: 100%;
 	position: inherit;
+	top: -2%;
 }
 #game-info {
+	position: relative;
+	top: 2%;
+	
 	font-family: sofia-pro;
 	font-size: 30px;
 	font-weight: normal;
