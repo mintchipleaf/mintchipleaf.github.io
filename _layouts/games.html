@@ -6,14 +6,14 @@ layout: default
 </head>
 
 <div class="content bg-light">
-  <span id="page-name" class="font40px text-dark bg-medium shadow-dark pixelade">{{ page.title | escape }}</span>
-  <span id="link-panel" class="font40px text-dark bg-medium shadow-dark-left pixelade">{% include links/social_links.html %}</span>
+  <span class="page-name font40px text-dark bg-medium shadow-dark pixelade">{{ page.title | escape }}</span>
+  <span class="link-panel {{page.titleclass}} text-dark bg-medium shadow-dark-left pixelade">{% include links/social_links.html %}</span>
   {%- include gameslist.html loc=site.categories.games-%}
 </div>
 
 <div class="content second-content bg-light">
   <div>
-      <span id="page-name" class="font40px text-dark bg-medium shadow-dark pixelade">{{ "jams" | escape }}</span>
+      <span class="page-name font40px text-dark bg-medium shadow-dark pixelade">{{ "jams" | escape }}</span>
   </div>
   {%- include gameslist.html loc=site.categories.jams-%}
 </div>

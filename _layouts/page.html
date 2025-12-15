@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="content bg-light">
-  <span id="page-name" class="font50px text-dark bg-medium shadow-dark pixelade">{{ page.title | escape }}</span>
-  <span id="link-panel" class="font50px text-dark bg-medium shadow-dark-left pixelade">{% include links/social_links.html %}</span>
+  <span class="page-name font50px text-dark bg-medium shadow-dark pixelade">{{ page.title | escape }}</span>
+  <span class="link-panel font50px text-dark bg-medium shadow-dark-left pixelade">{% include links/social_links.html %}</span>
   {{ content }}
 </div>

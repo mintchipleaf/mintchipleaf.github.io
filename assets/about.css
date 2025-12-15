@@ -27,6 +27,7 @@ td a {
 	margin-bottom: 12.5%;
 }
 #bio-text {
+	padding-top: 77px;
 	line-height: 130%;
 	text-align: justify;
 	text-wrap: balance;
@@ -40,16 +41,24 @@ td a {
 	margin-left: 12px;
 }
 #bio-links-wide {
-	max-width: 60%;
-	margin-left: 35%;
+	float: left;
+	position: absolute;
+	left: 35%;
 }
 #bio-links-compact {
 	display: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 579px) {
 	#bio-links-wide { display: none; }
-}
-@media (max-width: 550px) {
 	#bio-links-compact { display: inherit; }
+	#bio-links {
+		margin-bottom: 14px;
+	}
+	#bio-text {
+		padding-top: 0;
+	}
+	#bio-container {
+		margin-top: 20px;
+	}
 }

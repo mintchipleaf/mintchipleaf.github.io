@@ -6,7 +6,11 @@
 
     {%- for post in include.loc -%} 
         {% assign odd = forloop.index | modulo: 2%}
-        <div>
+        {%- if odd == 1 -%}
+            <div class="item-wrapper-left">
+        {%- else -%}
+            <div class="item-wrapper-right">
+        {%- endif -%}
 
             <div class="item">
                 <a href="{{ post.url | relative_url }}">
