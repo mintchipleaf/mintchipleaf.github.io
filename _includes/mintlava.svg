@@ -16,9 +16,27 @@
      <filter id="goo">
         <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
         <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>
-        <feBlend in="SourceGraphic" in2="goo"/>
+        <!-- <feBlend in="SourceGraphic" in2="goo"/> -->
       </filter>
     </defs>
+    <!-- <script type="text/javascript"><![CDATA[
+      // Find your root SVG element
+      var svg = document.querySelector('svg');
+
+      // Create an SVGPoint for future math
+      var pt = svg.createSVGPoint();
+
+      // Get point in global SVG space
+      function cursorPoint(evt){
+        pt.x = evt.clientX; pt.y = evt.clientY;
+        return pt.matrixTransform(svg.getScreenCTM().inverse());
+      }
+
+      svg.addEventListener('mousemove',function(evt){
+        var loc = cursorPoint(evt);
+        // Use loc.x and loc.y here
+      },false);
+    }]</script> -->
     <style>
         @keyframes blob-rise {
             0% {
@@ -44,14 +62,19 @@
             animation-timing-function: ease-in-out;
             fill: #9be2b9;
             opacity: 1;
+
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000;
         }
-        #layer1 {
-          clip-path: url(#lava-mask);
+        #mintlogo {
+          <!-- filter: url(#goo); -->
         }
     </style>
     <mask id="lava-mask" mask-type="alpha">
       <g class="lava">
-    <!-- Animated blobs -->
+        <circle id="mousemask" cx="250" cy="100" r="10" fill="#9be2b9" />
+      <!-- Animated blobs -->
         <circle class="blob" cx="-10" cy="100" r="25" style="--speed: 20; --delay: 0; --direction: alternate"></circle>
         <circle class="blob" cx="70" cy="100" r="35" style="--speed: 25; --delay: -5; --direction: alternate-reverse"></circle>
         <circle class="blob" cx="30" cy="100" r="30" style="--speed: 22; --delay: -10; --direction: alternate"></circle>
@@ -60,10 +83,13 @@
         <circle class="blob" cx="10" cy="100" r="32" style="--speed: 28; --delay: -12; --direction: alternate-reverse"></circle>
         <circle class="blob" cx="20" cy="100" r="22" style="--speed: 24; --delay: -2; --direction: alternate"></circle>
         <circle class="blob" cx="0" cy="100" r="26" style="--speed: 26; --delay: -8; --direction: alternate-reverse" filter="url(#goo)"></circle>
+        <ellipse class="blob blob--top" cx="50" cy="-20" rx="300" ry="15"/>
+        <ellipse class="blob blob--bottom" cx="50" cy="160" rx="300" ry="15"/>
       </g>
     </mask>
     <g class="lava">
     <!-- Animated blobs -->
+        <circle id="mouseblob" cx="250" cy="100" r="10" fill="#5c5987" />
         <circle class="blob" cx="-10" cy="100" r="25" style="--speed: 20; --delay: 0; --direction: alternate"></circle>
         <circle class="blob" cx="70" cy="100" r="35" style="--speed: 25; --delay: -5; --direction: alternate-reverse"></circle>
         <circle class="blob" cx="30" cy="100" r="30" style="--speed: 22; --delay: -10; --direction: alternate"></circle>
@@ -213,4 +239,38 @@
        fill-rule="nonzero"
        id="path39-1"
        style="fill:none;stroke:#5c5987;stroke-width:2.94924;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /></g>
+
+  <script type="text/javascript"><![CDATA[
+    var KEY = { w:87, a:65, s:83, d:68 };
+    var circle = document.getElementById("mouseblob");
+    var mask = document.getElementById("mousemask");
+
+    var svg = document.querySelector('svg');
+
+    // Create an SVGPoint for future math
+    var pt = svg.createSVGPoint();
+
+    // Get point in global SVG space
+    function cursorPoint(evt){
+      pt.x = evt.clientX; pt.y = evt.clientY;
+      return pt.matrixTransform(svg.getScreenCTM().inverse());
+    }
+
+    svg.addEventListener('mousemove',(evt) => {
+      var loc = cursorPoint(evt);
+      // Use loc.x and loc.y here
+      circle.setAttribute('cx',loc.x);
+      circle.setAttribute('cy',loc.y);
+      mask.setAttribute('cx',loc.x);
+      mask.setAttribute('cy',loc.y);
+    },false);
+
+    svg.addEventListener('mouseout', (event) => {
+      circle.setAttribute('cx', 1000);
+      circle.setAttribute('cy', 1000);
+      mask.setAttribute('cx', 1000);
+      mask.setAttribute('cy', 1000);
+    })
+
+  ]]></script>
 </svg>
