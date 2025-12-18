@@ -265,7 +265,7 @@
       mask.setAttribute('cy',loc.y);
     },false);
 
-    svg.addEventListener('mouseout', (event) => {
+    svg.addEventListener('mouseleave', (event) => {
       circle.setAttribute('cx', 1000);
       circle.setAttribute('cy', 1000);
       mask.setAttribute('cx', 1000);
