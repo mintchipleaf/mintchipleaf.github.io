@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-I'm mint and I'm a game developer & designer.<br/>
+I'm mint, a game developer & designer.<br/>
 I want to make beautiful ideas real, and I value play above all else.
 <br/>
 <br/>
